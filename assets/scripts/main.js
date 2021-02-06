@@ -34,15 +34,19 @@ volSlider.addEventListener("click", (e) => {
 
   if (e.target.value >= 67 && e.target.value <= 100) {
     volImage.src = "./assets/media/icons/volume-level-3.svg";
+    honkBtn.disabled = false;
   }
   else if (e.target.value >= 34 && e.target.value <= 66) {
     volImage.src = "./assets/media/icons/volume-level-2.svg";
+    honkBtn.disabled = false;
   }
   else if (e.target.value > 0 && e.target.value < 34) {
     volImage.src = "./assets/media/icons/volume-level-1.svg";
+    honkBtn.disabled = false;
   }
   else if (e.target.value == 0) {
     volImage.src = "./assets/media/icons/volume-level-0.svg";
+    honkBtn.disabled = true;
   }
 
 });
@@ -53,14 +57,18 @@ volNum.addEventListener("click", (e) => {
 
   if (e.target.value >= 67 && e.target.value <= 100) {
     volImage.src = "./assets/media/icons/volume-level-3.svg";
+    honkBtn.disabled = false;
   }
   else if (e.target.value >= 34 && e.target.value <= 66) {
     volImage.src = "./assets/media/icons/volume-level-2.svg";
+    honkBtn.disabled = false;
   }
   else if (e.target.value > 0 && e.target.Value < 34) {
     volImage.src = "./assets/media/icons/volume-level-1.svg";
+    honkBtn.disabled = false;
   }
   else if (e.target.value == 0) {
     volImage.src = "./assets/media/icons/volume-level-0.svg";
+    honkBtn.disabled = true;
   }
 });
